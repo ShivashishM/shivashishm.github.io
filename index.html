@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivashish Maheshwari - Embedded Systems Engineer (Dark Theme)</title>
+    <title>Shivashish Maheshwari - Lead Engineer | Embedded Systems | Multimedia</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +43,7 @@
             width: 100%; height: 100%; z-index: -2;
         }
 
-                .bg-glow {
+        .bg-glow {
             position: fixed; inset: 0; z-index: -1; pointer-events: none;
             background:
                 radial-gradient(circle at 15% 20%, rgba(167,139,250,0.15), transparent 25%),
@@ -51,8 +52,6 @@
             transition: transform 0.6s ease-out;
         }
 
-
-        /* Dynamic glow blobs */
         .bg-glow::before,
         .bg-glow::after {
             content: '';
@@ -75,22 +74,20 @@
         }
         @keyframes float1 {
             0%   { transform: translate(-12px, -10px) scale(1); }
-            50%  { transform: translate(18px, 8px)   scale(1.06); }
-            100% { transform: translate(-14px, 12px)  scale(1); }
+            50%  { transform: translate(18px, 8px) scale(1.06); }
+            100% { transform: translate(-14px, 12px) scale(1); }
         }
         @keyframes float2 {
             0%   { transform: translate(10px, -12px) scale(1); }
-            50%  { transform: translate(-16px, 6px)  scale(1.04); }
-            100% { transform: translate(12px, 10px)  scale(1); }
+            50%  { transform: translate(-16px, 6px) scale(1.04); }
+            100% { transform: translate(12px, 10px) scale(1); }
         }
 
-        /* Animated panel accent */
         @keyframes borderShift {
             0%   { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
         }
 
-        /* Animated pills */
         @keyframes pillShift {
             0%   { background-position: 0% 50%; }
             50%  { background-position: 100% 50%; }
@@ -98,13 +95,11 @@
         }
         .pill:hover { transform: translateY(-2px) scale(1.02); }
 
-        /* Title glow */
         @keyframes pulseGlow {
             0%, 100% { text-shadow: 0 0 8px rgba(167,139,250,0.25); }
             50%      { text-shadow: 0 0 14px rgba(244,114,182,0.35); }
         }
 
-        /* Scroll progress bar */
         .scroll-progress {
             position: fixed; top: 0; left: 0;
             height: 4px; width: 0%; z-index: 1200;
@@ -113,7 +108,6 @@
             transition: width 0.1s linear;
         }
 
-        /* Top nav */
         .top-nav {
             position: sticky; top: 0; z-index: 1100;
             backdrop-filter: blur(18px);
@@ -151,7 +145,6 @@
             border-color: rgba(244,114,182,0.40);
         }
 
-        /* Layout */
         .wrapper {
             max-width: 1180px; margin: 0 auto;
             padding: 28px 20px 90px;
@@ -173,7 +166,7 @@
             position: relative; overflow: hidden;
             backdrop-filter: blur(20px);
         }
-                .panel::before {
+        .panel::before {
             content: '';
             position: absolute; inset: 0 0 auto 0;
             height: 5px;
@@ -182,23 +175,11 @@
             animation: borderShift 6s linear infinite;
         }
 
-
-        /* Hero */
-                .hero {
+        .hero {
             display: grid;
             grid-template-columns: 1fr;
             gap: 32px; align-items: center;
             text-align: center;
-        }
-
-
-        .avatar {
-            width: 180px; height: 180px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            margin: 0 auto; font-size: 74px; color: var(--white);
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            box-shadow: 0 24px 50px rgba(167,139,250,0.45);
-            border: 6px solid rgba(167,139,250,0.30);
         }
 
         .eyebrow {
@@ -227,13 +208,14 @@
         .hero-text {
             color: var(--muted);
             font-size: 15px; line-height: 1.9;
-            max-width: 780px;
+            max-width: 820px;
+            margin: 0 auto;
         }
 
-        /* Contact chips */
         .contact-row {
             display: flex; flex-wrap: wrap;
             gap: 12px; margin-top: 22px;
+            justify-content: center;
         }
 
         .chip {
@@ -253,8 +235,7 @@
         }
         .chip a { color: inherit; text-decoration: none; }
 
-        /* Section headings */
-                .section-title {
+        .section-title {
             display: flex; align-items: center; gap: 12px;
             font-size: clamp(22px, 3vw, 32px);
             margin-bottom: 8px;
@@ -274,7 +255,6 @@
             color: var(--muted); margin-bottom: 26px; font-size: 14px;
         }
 
-        /* Grids */
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(2, minmax(0,1fr));
@@ -303,7 +283,6 @@
             color: var(--muted); font-size: 14px; line-height: 1.8;
         }
 
-        /* Timeline */
         .timeline { position: relative; padding-left: 28px; }
         .timeline::before {
             content: '';
@@ -333,8 +312,8 @@
             gap: 16px; flex-wrap: wrap; margin-bottom: 12px;
         }
 
-        .company { 
-            font-size: 18px; font-weight: 700; 
+        .company {
+            font-size: 18px; font-weight: 700;
             color: var(--primary-dark);
             font-family: 'Montserrat', sans-serif;
         }
@@ -360,9 +339,8 @@
             color: var(--accent); font-size: 18px; line-height: 1.4;
         }
 
-        /* Pills */
         .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-                .pill {
+        .pill {
             padding: 10px 14px; border-radius: 999px;
             background: linear-gradient(135deg, var(--primary), #8b5cf6, var(--accent));
             background-size: 200% 200%;
@@ -372,8 +350,6 @@
             transition: transform 0.3s ease;
         }
 
-
-        /* Project / edu grids */
         .project-grid, .edu-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0,1fr));
@@ -387,7 +363,6 @@
             color: var(--white); font-size: 12px; font-weight: 700;
         }
 
-        /* Reveal animations */
         .reveal {
             opacity: 0;
             transform: translateY(40px) scale(0.98);
@@ -400,10 +375,8 @@
             transform: translate(0,0) scale(1);
         }
 
-        /* Responsive */
         @media (max-width: 980px) {
             .hero, .grid-2, .project-grid, .edu-grid { grid-template-columns: 1fr; }
-            .hero { text-align: center; }
             .contact-row { justify-content: center; }
         }
         @media (max-width: 760px) {
@@ -411,74 +384,131 @@
             .nav-links { justify-content: flex-start; }
             section { min-height: auto; padding: 26px 0; }
             .panel { padding: 22px 16px; }
-            .avatar { width: 140px; height: 140px; font-size: 58px; }
             .timeline { padding-left: 22px; }
             .timeline-item::before { left: -20px; }
+        }
+
+                @media print {
+            html, body { background: #ffffff !important; color: #111827 !important; }
+            body { overflow: visible !important; }
+            canvas#bgCanvas, .bg-glow, .top-nav, .scroll-progress, .no-print { display: none !important; }
+            .wrapper { max-width: 100% !important; padding: 0 !important; }
+            section {
+                min-height: auto !important;
+                display: block !important;
+                padding: 0 !important;
+                margin: 0 0 14px 0 !important;
+                scroll-margin-top: 0 !important;
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            .panel {
+                box-shadow: none !important;
+                border: 1px solid #d1d5db !important;
+                background: #ffffff !important;
+                color: #111827 !important;
+                border-radius: 12px !important;
+                backdrop-filter: none !important;
+                overflow: visible !important;
+                padding: 18px !important;
+            }
+            .panel::before { display: none !important; }
+            .hero, .grid-2, .project-grid, .edu-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+            .reveal { opacity: 1 !important; transform: none !important; }
+            .eyebrow, .date-badge, .pill, .impact {
+                background: #eef2ff !important;
+                color: #4338ca !important;
+                box-shadow: none !important;
+                border: 1px solid #c7d2fe !important;
+            }
+            .chip, .skill-card, .edu-card, .project-card, .timeline-item {
+                background: #ffffff !important;
+                color: #111827 !important;
+                border: 1px solid #d1d5db !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            .section-title, h1, .company, .skill-card h3, .edu-card h3, .project-card h3 {
+                color: #111827 !important;
+                text-shadow: none !important;
+                animation: none !important;
+            }
+            .hero-title, .role {
+                color: #4338ca !important;
+            }
+            .hero-text, .section-subtitle, .skill-card p, .project-card p, .edu-card p, ul.clean li {
+                color: #374151 !important;
+            }
+            .timeline::before { background: #cbd5e1 !important; }
+            .timeline-item::before {
+                background: #6366f1 !important;
+                box-shadow: 0 0 0 3px #e5e7eb !important;
+            }
+            .chip a, a { color: #1d4ed8 !important; }
+            a[href]::after { content: "" !important; }
+            @page { margin: 10mm; size: A4 portrait; }
         }
     </style>
 </head>
 <body>
+
     <canvas id="bgCanvas"></canvas>
     <div class="bg-glow"></div>
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Navigation -->
     <nav class="top-nav">
         <div class="nav-inner">
             <div class="brand">Shivashish <span>Maheshwari</span></div>
             <div class="nav-links" id="navLinks">
-                <a href="#home"       class="active">&#127968; Home</a>
-                <a href="#skills">    &#127919; Skills</a>
+                <a href="#home" class="active">&#127968; Home</a>
+                <a href="#skills">&#127919; Skills</a>
                 <a href="#experience">&#128188; Experience</a>
-                <a href="#projects">  &#128640; Projects</a>
-                <a href="#education"> &#127891; Education</a>
+                <a href="#projects">&#128640; Projects</a>
+                <a href="#education">&#127891; Education</a>
             </div>
         </div>
     </nav>
 
     <main class="wrapper">
-
-        <!-- HOME -->
         <section id="home">
             <div class="panel reveal">
                 <div class="hero">
-
                     <div>
-                        <div class="eyebrow">Embedded Systems &bull; Multimedia &bull; Snapdragon</div>
+                        <div class="eyebrow">Embedded Systems &bull; Multimedia &bull; XR &bull; Snapdragon</div>
                         <h1>Shivashish Maheshwari</h1>
-                        <div class="hero-title">Lead Engineer &mdash; Embedded Systems &amp; Multimedia</div>
+                        <div class="hero-title">Lead Engineer | Embedded Systems | Multimedia | XR | Video Codec | Windows on Snapdragon</div>
                         <p class="hero-text">
-                            Embedded Software Engineer with nearly 10 years of experience across system integration,
-                            video codec, SDK, QNX, XR, driver development, and optimization on Snapdragon SoCs.
-                            Strong background in Embedded Linux, Android, Windows, multimedia pipeline debugging,
-                            and performance tuning for production-grade systems.
+                            Embedded Software Engineer with nearly 10 years of experience in multimedia systems, XR/AR/VR technologies,
+                            embedded platforms, video codec analysis, SDK enablement, and system optimization across Android,
+                            Windows on Snapdragon, QNX, and Embedded Linux environments. Experienced in supporting, customizing,
+                            and implementing applications based on Media Codec, AR/VR, and Qualcomm-enhanced SDK solutions for major ISV customers.
                         </p>
                         <div class="contact-row">
                             <div class="chip">&#128205;&nbsp;Hyderabad, India</div>
-                            <div class="chip">
-                                &#128231;&nbsp;<a href="mailto:maheshwari.shivashish@hotmail.com">maheshwari.shivashish@hotmail.com</a>
-                            </div>
-                            <div class="chip">
-                                &#128241;&nbsp;<a href="tel:+919098552496">+91 90985 52496</a>
-                            </div>
-                            <div class="chip">
-                                &#128279;&nbsp;<a href="https://www.linkedin.com/in/shivashish-maheshwari/" target="_blank" rel="noopener">linkedin.com/in/shivashish-maheshwari</a>
-                            </div>
+                            <div class="chip">&#128231;&nbsp;<a href="mailto:maheshwari.shivashish@hotmail.com">maheshwari.shivashish@hotmail.com</a></div>
+                            <div class="chip">&#128241;&nbsp;<a href="tel:+919098552496">+91 90985 52496</a></div>
+                            <div class="chip">&#128279;&nbsp;<a href="https://www.linkedin.com/in/shivashish-maheshwari/" target="_blank" rel="noopener">linkedin.com/in/shivashish-maheshwari</a></div>
+                                                        <div class="chip no-print" id="downloadPdfBtn">&#128462;&nbsp;<a href="#" id="downloadPdfLink">Download PDF</a></div>
+                            <div class="chip no-print" id="printBtn">&#128424;&nbsp;Print / Save as PDF</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SKILLS -->
         <section id="skills">
             <div class="panel reveal left">
                 <h2 class="section-title">Core Technical Competencies</h2>
-                <p class="section-subtitle">Comprehensive skill set across embedded systems, multimedia, and software engineering.</p>
-                                <div class="grid-2">
+                <p class="section-subtitle">Comprehensive skill set across embedded systems, multimedia, XR, codec enablement, and software engineering.</p>
+                <div class="grid-2">
                     <div class="skill-card reveal left">
                         <h3>&#127909; Video &amp; Multimedia</h3>
-                        <p>VVC/H.266, MFT, APV, video encoding/decoding, DirectX 11/12, Real-Time Video Rendering, pipeline optimization, ROI, Video Extension.</p>
+                        <p>Media Codec, VVC/H.266, video encoding/decoding, MFT, APV, DirectX 11/12, Real-Time Video Rendering, ROI, Video Extension, video see-through.</p>
                     </div>
                     <div class="skill-card reveal right">
                         <h3>&#128187; Programming</h3>
@@ -486,124 +516,105 @@
                     </div>
                     <div class="skill-card reveal left">
                         <h3>&#128421; Platforms &amp; OS</h3>
-                        <p>Windows on Snapdragon, Android SDK/NDK, QNX Neutrino RTOS, Embedded Linux, Yocto, AOSP, BSP bring-up and integration.</p>
+                        <p>Windows on Snapdragon, Android on Snapdragon, Android SDK/NDK, QNX Neutrino RTOS, Embedded Linux, Yocto, Ubuntu, AOSP.</p>
                     </div>
                     <div class="skill-card reveal right">
                         <h3>&#128269; Debugging &amp; Profiling</h3>
-                        <p>WPA, trace tools, deep profiling, system-level debugging, bottleneck analysis, throughput optimization, latency reduction.</p>
+                        <p>WPA, tracing, profiling, root-cause analysis, system-level debugging, bottleneck analysis, throughput optimization, latency reduction.</p>
                     </div>
                     <div class="skill-card reveal left">
-                        <h3>&#9881; Drivers &amp; Middleware</h3>
-                        <p>Driver development for I2C, GPIO, UART, SPI, SDMMC, HDMI, HAL updates, middleware integration, cross-platform porting.</p>
+                        <h3>&#9881; Drivers, HAL &amp; Middleware</h3>
+                        <p>Driver development for I2C, GPIO, UART, SPI, SDMMC, HDMI, USB, HAL updates, middleware integration, BSP support, cross-platform porting.</p>
                     </div>
                     <div class="skill-card reveal right">
                         <h3>&#128640; Advanced Domains</h3>
-                        <p>XR/QVR services, eye tracking, hand tracking, ultrasound tracking, BLE/GATT, AI orchestration, Qt/QML, OpenCV, HTML tools.</p>
+                        <p>XR/QVR services, AR/VR, eye tracking, hand tracking, ultrasound tracking, BLE/GATT, AI orchestration, Qt/QML, OpenCV, Python Flask, HTML tools.</p>
                     </div>
-
                     <div class="skill-card reveal left">
-                        <h3>Rendering &amp; GPU Acceleration</h3>
-                        <p>DXVA, swap chains, zero-copy shared surfaces, DirectML, shader-based color conversion, NV12/YUV420, HDR10/HLG.</p>
+                        <h3>Rendering &amp; Codec Enablement</h3>
+                        <p>Real-Time Video Rendering, video see-through, Windows and Android sample applications, codec functionality validation, customer issue reproduction.</p>
                     </div>
                     <div class="skill-card reveal right">
-                        <h3>Streaming &amp; Real-Time Media</h3>
-                        <p>RTP/RTSP, WebRTC, adaptive bitrate, low-latency tuning, timestamp synchronization, jitter buffering.</p>
+                        <h3>Connectivity &amp; Communication</h3>
+                        <p>BLE, GATT, RTSP, GET protocol, USB, UART, JSON configuration, mobile-to-appliance communication.</p>
                     </div>
                     <div class="skill-card reveal left">
-                        <h3>System Integration &amp; BSP</h3>
-                        <p>Device Tree, bootloaders, secure boot, HAL/driver integration, board bring-up, peripheral validation.</p>
+                        <h3>System Integration &amp; Platform Support</h3>
+                        <p>HAL and driver integration, BSP support, firmware collaboration, board bring-up, peripheral validation, customer-facing issue resolution.</p>
                     </div>
                     <div class="skill-card reveal right">
-                        <h3>Build Systems &amp; Toolchains</h3>
-                        <p>CMake, Ninja, Bazel, Gradle, Yocto BitBake layers/recipes, cross-compilation (arm64/armv7), LLVM/Clang, GCC.</p>
+                        <h3>Build, Automation &amp; Quality</h3>
+                        <p>Jenkins, GitHub, QTP automation, shell scripting, build and deployment automation, code compliance and integration (CCI).</p>
                     </div>
                     <div class="skill-card reveal left">
-                        <h3>IPC &amp; Communication</h3>
-                        <p>Android Binder/AIDL, shared memory, gRPC, sockets, COM/WinRT, performance-safe thread orchestration.</p>
+                        <h3>Developer Enablement</h3>
+                        <p>Customer-facing APIs, technical documentation, sample application development, ISV collaboration, SDK adoption support.</p>
                     </div>
                     <div class="skill-card reveal right">
-                        <h3>Testing, CI/CD &amp; Quality</h3>
-                        <p>GoogleTest/pytest, instrumentation, fuzzing, static analysis, code review, Jenkins/GitHub Actions pipelines.</p>
-                    </div>
-                    <div class="skill-card reveal left">
-                        <h3>Performance &amp; Optimization Techniques</h3>
-                        <p>SIMD/NEON, vectorization, cache-aware design, memory alignment, DMA, throughput profiling, latency reduction.</p>
+                        <h3>Performance &amp; Resource Optimization</h3>
+                        <p>CPU, memory, and OS resource utilization analysis, platform tuning, issue triage, performance benchmarking, latency reduction.</p>
                     </div>
                 </div>
 
-                                <div class="pill-row reveal">
+                <div class="pill-row reveal">
+                    <span class="pill">Media Codec</span>
                     <span class="pill">VVC / H.266</span>
-                    <span class="pill">H.264 / H.265</span>
-                    <span class="pill">AV1</span>
                     <span class="pill">MFT</span>
+                    <span class="pill">APV</span>
                     <span class="pill">DX11 / DX12</span>
-                    <span class="pill">DXVA</span>
-                    <span class="pill">DirectML</span>
-                    <span class="pill">NV12 / YUV420</span>
-                    <span class="pill">HDR10 / HLG</span>
-                    <span class="pill">RTP / RTSP</span>
-                    <span class="pill">WebRTC</span>
-                    <span class="pill">ETW / WPR / WPA</span>
-                    <span class="pill">Perfetto / ftrace</span>
-                    <span class="pill">COM / WinRT</span>
-                    <span class="pill">AIDL / Binder</span>
-                    <span class="pill">Device Tree</span>
-                    <span class="pill">CMake / Ninja</span>
-                    <span class="pill">Bazel</span>
-                    <span class="pill">BitBake</span>
+                    <span class="pill">QESDK</span>
+                    <span class="pill">RVR</span>
+                    <span class="pill">ROI</span>
+                    <span class="pill">Video Extension</span>
+                    <span class="pill">Video See-Through</span>
+                    <span class="pill">ETW / WPA</span>
                     <span class="pill">Android NDK</span>
                     <span class="pill">Yocto / AOSP</span>
-                    <span class="pill">SIMD / NEON</span>
-                    <span class="pill">Zero-Copy</span>
-                    <span class="pill">DMA</span>
-                    <span class="pill">CI/CD</span>
+                    <span class="pill">QNX</span>
+                    <span class="pill">BLE / GATT</span>
+                    <span class="pill">RTSP</span>
+                    <span class="pill">OpenCV</span>
+                    <span class="pill">Qt / QML</span>
+                    <span class="pill">Python Flask</span>
+                    <span class="pill">Jenkins</span>
+                    <span class="pill">GitHub</span>
+                    <span class="pill">CCI</span>
+                    <span class="pill">HAL / Driver</span>
+                    <span class="pill">AIOR</span>
                 </div>
-
             </div>
         </section>
 
-        <!-- EXPERIENCE -->
         <section id="experience">
             <div class="panel reveal">
                 <h2 class="section-title">Professional Experience</h2>
-                <p class="section-subtitle">~10 years across Qualcomm, Whirlpool, Smart I Systems, Wipro, and Vector India.</p>
+                <p class="section-subtitle">Nearly 10 years across Qualcomm, Whirlpool, Smart I Systems, Wipro, and Vector India.</p>
                 <div class="timeline">
-
-                    <div class="timeline-item reveal left">
+                                        <div class="timeline-item reveal left">
                         <div class="timeline-top">
                             <div>
                                 <div class="company">Qualcomm India &mdash; Hyderabad</div>
-                                <div class="role">Lead Engineer Senior, PES &nbsp;|&nbsp; Sep 2020 &ndash; Present</div>
+                                <div class="role">Lead Engineer Senior / Senior Engineer, Product Engineering Services</div>
                             </div>
-                            <div class="date-badge">Current Role</div>
+                            <div class="date-badge">Sep 2020 &ndash; Present</div>
                         </div>
                         <ul class="clean">
-                            <li>Leading development and optimization of next-generation video codecs (VVC/H.266) for encoding and decoding pipelines on Snapdragon SoCs.</li>
-                            <li>Working on Media Foundation Transform (MFT) and APV for high-performance multimedia processing.</li>
-                            <li>Implementing hardware-accelerated pipelines using DirectX 11 &amp; 12 on Windows on Snapdragon.</li>
-                            <li>Performing deep debugging using WPA, tracing, and profiling tools to improve throughput and stability.</li>
-                            <li>Collaborating with software vendors, Microsoft support, and customers on codec and MFT issues.</li>
-                            <li>Contributing to AI orchestration (AIOR) initiatives starting from 2025.</li>
+                            <li>Support, customize, and implement multimedia, AR/VR, and Qualcomm-enhanced SDK solutions for major ISV customers across Android and Windows on Snapdragon platforms, with end-to-end ownership from issue analysis to production-quality delivery.</li>
+                            <li>Led XR-focused development from 2020 to 2022 across advanced features such as eye tracking, hand tracking, ultrasound tracking, video see-through, and Real-Time Video Rendering (RVR), helping enable immersive and performance-sensitive user experiences.</li>
+                            <li>Enhanced application experiences using ROI, Video Extension, video see-through, and QESDK-based capabilities on Android on Snapdragon, with emphasis on feature integration, usability, and platform stability.</li>
+                            <li>Analyzed complex video codec issues and drove HAL and driver-level changes required to resolve platform, integration, and customer-specific problems across multimedia pipelines.</li>
+                            <li>Contributed to video encoding and decoding issue analysis and fixes across both Android and Windows starting in 2024, including debugging across application, framework, HAL, driver, and firmware interaction points.</li>
+                            <li>Worked closely with video editing software vendors, Qualcomm internal teams, Microsoft support, and external customers to investigate MFT-related issues, align on root-cause findings, and drive resolution for production use cases.</li>
+                            <li>Developed and optimized Windows- and Android-based sample applications to demonstrate QESDK and codec functionality, accelerate customer onboarding, reproduce field issues, and validate feature behavior across platforms.</li>
+                            <li>Improved SDK and API communication between Java and native Android layers by analyzing data flow, debugging integration gaps, and resolving issues impacting ISV customer applications and Snapdragon-based deployments.</li>
+                            <li>Optimized CPU, memory, and OS resource utilization for customer applications and algorithms, improving efficiency, responsiveness, and overall platform reliability under real-world workloads.</li>
+                            <li>Managed CCI (Code Compliance and Integration) and licensing workflows to ensure code quality, compliance, accessibility, and maintainability across collaboration environments including GitHub-based development flows.</li>
+                            <li>Designed, refined, and maintained customer-facing APIs, technical documentation, and sample applications to improve feature visibility, reduce integration effort, and strengthen developer adoption of Qualcomm solutions.</li>
+                            <li>Started contributing to AI orchestration (AIOR) initiatives from 2025, extending platform experience into AI/ML workflow enablement and orchestration-focused solution support.</li>
                         </ul>
                     </div>
 
                     <div class="timeline-item reveal right">
-                        <div class="timeline-top">
-                            <div>
-                                <div class="company">Qualcomm India &mdash; Hyderabad</div>
-                                <div class="role">Senior Engineer, Product Engineering Service &nbsp;|&nbsp; 2020 &ndash; 2024</div>
-                            </div>
-                            <div class="date-badge">2020 &ndash; 2024</div>
-                        </div>
-                        <ul class="clean">
-                            <li>Developed and optimized XR/QVR services on Android platforms.</li>
-                            <li>Worked on eye tracking, hand tracking, ultrasound tracking, video see-through, and RVR.</li>
-                            <li>Enhanced SDK/API communication from Java to native layer with debugging and optimization support.</li>
-                            <li>Led customer code porting and performance tuning on Qualcomm chipsets.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item reveal left">
                         <div class="timeline-top">
                             <div>
                                 <div class="company">Whirlpool India &mdash; Pune</div>
@@ -612,14 +623,15 @@
                             <div class="date-badge">Sep 2018 &ndash; Sep 2020</div>
                         </div>
                         <ul class="clean">
-                            <li>Customized AOSP for advanced cooking appliances with ML and Android connectivity.</li>
-                            <li>Developed BLE-based interfaces and resolved GATT communication issues.</li>
-                            <li>Automated resource monitoring and generated CPU/memory visualizations using Python.</li>
-                            <li>Optimized boot time and overall OS performance with driver and system tuning.</li>
+                            <li>Customized AOSP for Whirlpool's advanced cooking appliances by integrating Android connectivity and machine learning-oriented features.</li>
+                            <li>Optimized system performance through custom driver integration, OS tailoring, and build/deployment automation.</li>
+                            <li>Developed Python-based tools to collect and analyze CPU and memory usage data and generate visualizations.</li>
+                            <li>Designed custom interfaces for mobile-to-appliance communication and resolved BLE/GATT issues for reliable SoC-to-microcontroller connectivity.</li>
+                            <li>Collaborated with cross-functional teams to meet performance, connectivity, and product requirements.</li>
                         </ul>
                     </div>
 
-                    <div class="timeline-item reveal right">
+                    <div class="timeline-item reveal left">
                         <div class="timeline-top">
                             <div>
                                 <div class="company">Smart I Systems Electronic Pvt. Ltd. &mdash; Pune</div>
@@ -628,14 +640,15 @@
                             <div class="date-badge">Jun 2017 &ndash; Sep 2018</div>
                         </div>
                         <ul class="clean">
-                            <li>Developed Yocto Linux based monitoring systems capturing images from cameras and DVRs via RTSP/GET.</li>
-                            <li>Used OpenCV for frame processing, duplicate removal, and memory optimization.</li>
-                            <li>Engineered Qt-based biometric attendance systems with USB/UART/I2C integration.</li>
-                            <li>Built web tools with Python Flask and HTML for configuration and management.</li>
+                            <li>Developed and optimized an integrated monitoring system on Yocto Linux, capturing images from multiple cameras and DVRs using RTSP and GET protocols.</li>
+                            <li>Used OpenCV for frame processing, change detection, video speed enhancement, duplicate image removal, and server memory optimization.</li>
+                            <li>Created web-based HTML interfaces for image viewing, configuration, and event-based upload workflows.</li>
+                            <li>Engineered Qt-based biometric attendance systems with USB, UART, and I2C integration on Ubuntu and Yocto Linux.</li>
+                            <li>Developed Python Flask applications, JSON-based configuration support, and Linux-based authentication solutions for attendance and access control systems.</li>
                         </ul>
                     </div>
 
-                    <div class="timeline-item reveal left">
+                    <div class="timeline-item reveal right">
                         <div class="timeline-top">
                             <div>
                                 <div class="company">Wipro Technologies Pvt. Ltd. &mdash; Pune</div>
@@ -644,14 +657,15 @@
                             <div class="date-badge">Jul 2015 &ndash; Jun 2017</div>
                         </div>
                         <ul class="clean">
-                            <li>Developed middleware and drivers for QNX Neutrino RTOS based infotainment systems.</li>
-                            <li>Validated drivers ported from Linux including UART, I2C, SPI, RTC, SDMMC, and HDMI.</li>
-                            <li>Created resource managers, GPIO middleware, and automation with Jenkins and shell scripts.</li>
-                            <li>Worked on screen framework integration and driver test automation using QTP.</li>
+                            <li>Developed middleware and drivers for QNX Neutrino RTOS-based automotive infotainment systems.</li>
+                            <li>Configured NTSC decoder ICs, created application-level libraries, and integrated image display with the QNX screen framework.</li>
+                            <li>Developed intermediate UART and I2C device drivers and QNX resource managers to support multiple applications through logical file system nodes.</li>
+                            <li>Validated QNX drivers ported from Linux, including UART, I2C, SPI, RTC, SDMMC, and HDMI, using the QTP automation framework.</li>
+                            <li>Built GPIO middleware libraries, developed automated test cases using C and shell scripting, and integrated execution with Jenkins.</li>
                         </ul>
                     </div>
 
-                    <div class="timeline-item reveal right">
+                    <div class="timeline-item reveal left">
                         <div class="timeline-top">
                             <div>
                                 <div class="company">Vector India Pvt. Ltd. &mdash; Bangalore</div>
@@ -661,55 +675,52 @@
                         </div>
                         <ul class="clean">
                             <li>Gained foundational expertise in ARM architecture and low-level programming.</li>
-                            <li>Developed proficiency in C and Assembly language for microcontrollers.</li>
+                            <li>Developed practical skills in C and Assembly language for embedded systems and microcontrollers.</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- PROJECTS -->
         <section id="projects">
             <div class="panel reveal right">
                 <h2 class="section-title">Key Project Highlights</h2>
                 <p class="section-subtitle">Impactful work areas across the career timeline.</p>
                 <div class="project-grid">
                     <div class="project-card reveal left">
-                        <h3>VVC / H.266 Codec Optimization</h3>
-                        <p>Codec issue analysis, encoding/decoding optimization, and vendor support enablement over Windows and Android.</p>
-                        <span class="impact">Performance-focused</span>
+                        <h3>Qualcomm Multimedia, XR, and SDK Enablement</h3>
+                        <p>Supported and customized applications for major ISV customers using Media Codec, AR/VR, QESDK, Android on Snapdragon, and Windows on Snapdragon.</p>
+                        <span class="impact">Customer Enablement</span>
                     </div>
                     <div class="project-card reveal">
-                        <h3>Windows on Snapdragon Multimedia Stack</h3>
-                        <p>Hardware-accelerated video pipelines using MFT, APV, DX11/DX12, tracing, and profiling on WoS.</p>
-                        <span class="impact">Latency &amp; Stability</span>
+                        <h3>Video Codec Issue Analysis and Platform Fixes</h3>
+                        <p>Analyzed and resolved complex encoding and decoding issues with HAL, driver, firmware, Android, Windows, and MFT-related workflows.</p>
+                        <span class="impact">Root Cause Resolution</span>
                     </div>
                     <div class="project-card reveal right">
-                        <h3>XR / QVR Services</h3>
-                        <p>Advanced XR features including hand tracking, eye tracking, video see-through, and rendering pipelines.</p>
+                        <h3>XR and Real-Time Video Rendering</h3>
+                        <p>Worked on eye tracking, hand tracking, ultrasound tracking, video see-through, ROI, Video Extension, and Real-Time Video Rendering on Snapdragon platforms.</p>
                         <span class="impact">User Experience</span>
                     </div>
                     <div class="project-card reveal left">
-                        <h3>AOSP + BLE Appliance Platform</h3>
-                        <p>Customized Android for appliances, improved BLE reliability, and integrated ML-oriented features with system tuning.</p>
+                        <h3>Whirlpool AOSP and BLE Appliance Platform</h3>
+                        <p>Customized AOSP, optimized system performance, integrated custom drivers, automated monitoring, and improved BLE/GATT communication for connected appliances.</p>
                         <span class="impact">Field Deployment</span>
                     </div>
                     <div class="project-card reveal">
-                        <h3>Yocto Monitoring &amp; Biometric Systems</h3>
-                        <p>Monitoring and attendance solutions using Yocto, OpenCV, Qt/QML, Python Flask, and embedded interfaces.</p>
+                        <h3>Yocto Monitoring and Biometric Systems</h3>
+                        <p>Built monitoring and attendance solutions using Yocto Linux, OpenCV, Qt, Python Flask, HTML interfaces, and embedded device integration.</p>
                         <span class="impact">Optimization</span>
                     </div>
                     <div class="project-card reveal right">
-                        <h3>QNX Automotive Middleware</h3>
-                        <p>Driver layers, middleware, and test automation for infotainment products on QNX Neutrino RTOS.</p>
+                        <h3>QNX Automotive Middleware and Driver Validation</h3>
+                        <p>Developed middleware, resource managers, intermediate drivers, and automated validation for automotive infotainment products on QNX Neutrino RTOS.</p>
                         <span class="impact">Reliability</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- EDUCATION -->
         <section id="education">
             <div class="panel reveal">
                 <h2 class="section-title">Education &amp; Certifications</h2>
@@ -744,9 +755,9 @@
                     <div class="skill-card reveal right">
                         <h3>&#127919; Additional Strengths</h3>
                         <ul class="clean">
-                            <li>Cross-functional communication with global teams and ISV customers</li>
-                            <li>Project leadership, mentoring, and end-to-end delivery ownership</li>
-                            <li>Patent-oriented thinking and scalable solution design</li>
+                            <li>Strong customer-facing communication with ISVs, vendors, and support teams</li>
+                            <li>Deep debugging capability across Android, Windows, QNX, and embedded Linux platforms</li>
+                            <li>Ownership in customization, integration, and production issue resolution</li>
                             <li>AI orchestration and customer-facing SDK enablement</li>
                         </ul>
                     </div>
@@ -757,20 +768,18 @@
         <div style="height:30px;"></div>
     </main>
 
-        <script>
-        // Scroll progress bar
+    <script>
         const progressBar = document.getElementById('scrollProgress');
         let speedFactor = 1;
         window.addEventListener('scroll', () => {
-            const scrollTop  = window.scrollY;
-            const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
-            const pct        = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
             progressBar.style.width = pct + '%';
             speedFactor = 1 + (pct / 400);
             updateActiveNav();
         }, { passive: true });
 
-        // Active nav highlight
         const navLinks = document.querySelectorAll('#navLinks a');
         const sections = document.querySelectorAll('main section');
 
@@ -784,7 +793,6 @@
             );
         }
 
-        // Reveal on scroll (IntersectionObserver)
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -793,16 +801,15 @@
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-        // Canvas particle background + interactive effects
         const canvas = document.getElementById('bgCanvas');
-        const ctx    = canvas.getContext('2d');
-        let pts      = [];
-        let stars    = [];
-        let time     = 0;
+        const ctx = canvas.getContext('2d');
+        let pts = [];
+        let stars = [];
+        let time = 0;
         let mx = null, my = null;
 
         function resize() {
-            canvas.width  = window.innerWidth;
+            canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         }
 
@@ -813,19 +820,18 @@
                 this.init();
             }
             init() {
-                this.x  = Math.random() * canvas.width;
-                this.y  = Math.random() * canvas.height;
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
                 this.vx = (Math.random() - 0.5) * 0.42;
                 this.vy = (Math.random() - 0.5) * 0.42;
-                this.a  = Math.random() * 0.50 + 0.15;
+                this.a = Math.random() * 0.50 + 0.15;
             }
             move() {
-                // Mouse repel
                 if (mx !== null && my !== null) {
                     const dx = this.x - mx;
                     const dy = this.y - my;
-                    const d2 = dx*dx + dy*dy;
-                    if (d2 < 180*180) {
+                    const d2 = dx * dx + dy * dy;
+                    if (d2 < 180 * 180) {
                         const d = Math.sqrt(d2) || 1;
                         const force = (180 - d) / 180 * 0.06;
                         this.vx += (dx / d) * force;
@@ -834,8 +840,7 @@
                 }
                 this.x += this.vx * speedFactor;
                 this.y += this.vy * speedFactor;
-                if (this.x < -10 || this.x > canvas.width  + 10 ||
-                    this.y < -10 || this.y > canvas.height + 10) this.init();
+                if (this.x < -10 || this.x > canvas.width + 10 || this.y < -10 || this.y > canvas.height + 10) this.init();
             }
             draw() {
                 const r = this.baseR * (1 + 0.25 * Math.sin(time * 0.003 + this.phase));
@@ -866,9 +871,7 @@
                 this.x += this.vx * 1.5;
                 this.y += this.vy * 1.5;
                 this.life++;
-                if (this.life > this.maxLife || this.x < -50 || this.y > canvas.height + 50) {
-                    this.reset();
-                }
+                if (this.life > this.maxLife || this.x < -50 || this.y > canvas.height + 50) this.reset();
             }
             draw() {
                 ctx.strokeStyle = 'rgba(244,114,182,0.35)';
@@ -891,7 +894,7 @@
                 for (let j = i + 1; j < pts.length; j++) {
                     const dx = pts[i].x - pts[j].x;
                     const dy = pts[i].y - pts[j].y;
-                    const d  = Math.sqrt(dx * dx + dy * dy);
+                    const d = Math.sqrt(dx * dx + dy * dy);
                     if (d < 120) {
                         const dynamicAlpha = 0.10 + 0.08 * Math.sin(time * 0.002 + i * 0.2);
                         const alpha = Math.max(0, dynamicAlpha * (1 - d / 120));
@@ -919,7 +922,6 @@
 
         window.addEventListener('resize', () => { resize(); initDots(); initStars(); }, { passive: true });
 
-        // Parallax glow & mouse interaction
         window.addEventListener('mousemove', (e) => {
             mx = e.clientX; my = e.clientY;
             const px = (e.clientX / window.innerWidth - 0.5) * 20;
@@ -930,6 +932,178 @@
             mx = null; my = null;
             document.querySelector('.bg-glow').style.transform = 'translate(0,0)';
         }, { passive: true });
+
+        document.getElementById('printBtn')?.addEventListener('click', () => window.print());
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-YcsIPGZrGgnYx3yOXJomqCbEPuEUS8GluuB4a1rJzmPOlxvVfM7W5sjAUv7f9cT7z6I/krJ9gI9xDj8Xw2kQmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      (function(){
+        function injectExportStyles(){
+          if (document.getElementById('pdf-export-style')) return;
+          const style = document.createElement('style');
+          style.id = 'pdf-export-style';
+                    style.textContent = `
+            body.pdf-export, body.pdf-export html {
+              background: #ffffff !important;
+              color: #111827 !important;
+            }
+            body.pdf-export {
+              overflow: visible !important;
+            }
+            body.pdf-export canvas#bgCanvas,
+            body.pdf-export .bg-glow,
+                        body.pdf-export .top-nav,
+            body.pdf-export .scroll-progress,
+            body.pdf-export .no-print { display: none !important; }
+            body.pdf-export .wrapper {
+              max-width: 100% !important;
+              padding: 0 !important;
+            }
+            body.pdf-export section {
+              min-height: auto !important;
+              display: block !important;
+              padding: 0 !important;
+              margin: 0 0 14px 0 !important;
+              scroll-margin-top: 0 !important;
+              break-inside: avoid;
+              page-break-inside: avoid;
+            }
+            body.pdf-export .panel {
+              box-shadow: none !important;
+              border: 1px solid #d1d5db !important;
+              background: #ffffff !important;
+              color: #111827 !important;
+              border-radius: 12px !important;
+              backdrop-filter: none !important;
+              overflow: visible !important;
+              padding: 18px !important;
+            }
+            body.pdf-export .panel::before { display: none !important; }
+            body.pdf-export .reveal {
+              opacity: 1 !important;
+              transform: none !important;
+              animation: none !important;
+            }
+            body.pdf-export .hero,
+            body.pdf-export .grid-2,
+            body.pdf-export .project-grid,
+            body.pdf-export .edu-grid {
+              grid-template-columns: 1fr !important;
+              gap: 12px !important;
+            }
+            body.pdf-export .eyebrow,
+            body.pdf-export .date-badge,
+            body.pdf-export .pill,
+            body.pdf-export .impact {
+              background: #eef2ff !important;
+              color: #4338ca !important;
+              border: 1px solid #c7d2fe !important;
+              box-shadow: none !important;
+            }
+            body.pdf-export .chip,
+            body.pdf-export .skill-card,
+            body.pdf-export .edu-card,
+            body.pdf-export .project-card,
+            body.pdf-export .timeline-item {
+              border: 1px solid #d1d5db !important;
+              background: #ffffff !important;
+              color: #111827 !important;
+              box-shadow: none !important;
+              backdrop-filter: none !important;
+              break-inside: avoid;
+              page-break-inside: avoid;
+            }
+            body.pdf-export .section-title,
+            body.pdf-export h1,
+            body.pdf-export .company,
+            body.pdf-export .skill-card h3,
+            body.pdf-export .edu-card h3,
+            body.pdf-export .project-card h3 {
+              color: #111827 !important;
+              text-shadow: none !important;
+              animation: none !important;
+            }
+            body.pdf-export .hero-title,
+            body.pdf-export .role {
+              color: #4338ca !important;
+            }
+            body.pdf-export .hero-text,
+            body.pdf-export .section-subtitle,
+            body.pdf-export .skill-card p,
+            body.pdf-export .project-card p,
+            body.pdf-export .edu-card p,
+            body.pdf-export ul.clean li {
+              color: #374151 !important;
+            }
+            body.pdf-export .timeline::before {
+              background: #cbd5e1 !important;
+            }
+            body.pdf-export .timeline-item::before {
+              background: #6366f1 !important;
+              box-shadow: 0 0 0 3px #e5e7eb !important;
+            }
+            body.pdf-export .chip a,
+            body.pdf-export a {
+              color: #1d4ed8 !important;
+            }
+          `;
+          document.head.appendChild(style);
+        }
+
+        function ensureHtml2Pdf(){
+          return new Promise((resolve, reject) => {
+            if (window.html2pdf) return resolve();
+            const s = document.createElement('script');
+            s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+            s.onload = () => resolve();
+            s.onerror = () => reject(new Error('Failed to load html2pdf.js'));
+            document.head.appendChild(s);
+          });
+        }
+
+        async function generatePdf(){
+          try {
+            injectExportStyles();
+            document.body.classList.add('pdf-export');
+            const element = document.querySelector('main') || document.body;
+                        const opt = {
+              margin: [0.3, 0.3, 0.3, 0.3],
+              filename: 'Shivashish_Maheshwari_Resume.pdf',
+              image: { type: 'jpeg', quality: 0.98 },
+              html2canvas: {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: '#ffffff',
+                scrollX: 0,
+                scrollY: 0
+              },
+              jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+              pagebreak: { mode: ['css', 'legacy'], avoid: ['.timeline-item', '.skill-card', '.project-card', '.edu-card', '.panel'] }
+            };
+            await ensureHtml2Pdf();
+            await html2pdf().set(opt).from(element).save();
+          } catch (err) {
+            console.error('PDF generation failed:', err);
+            alert('PDF generation failed. You can try the Print / Save as PDF option.');
+          } finally {
+            document.body.classList.remove('pdf-export');
+          }
+        }
+
+                const downloadLink = document.getElementById('downloadPdfLink');
+        const downloadBtn = document.getElementById('downloadPdfBtn');
+        if (downloadLink) {
+          downloadLink.addEventListener('click', function(e){ e.preventDefault(); generatePdf(); });
+        }
+        if (downloadBtn) {
+          downloadBtn.addEventListener('click', function(e){
+            if (e.target !== downloadLink) {
+              e.preventDefault();
+              generatePdf();
+            }
+          });
+        }
+      })();
     </script>
 
 </body>
